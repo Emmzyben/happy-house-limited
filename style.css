@@ -228,7 +228,24 @@ footer p{
     height: 100px;width: 100%;border: 1px solid #ffc107;
     border-radius: 5px;
 }
+button a{
+    text-decoration: none;color: #000000;
+}
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
+  }
+  .content.visible {
+    display: block;
+    opacity: 1; /* Fully visible when the class is added */
+  }
+  #uppest{text-align: center;padding: 20px;}
+  #uppest h2{color: #ffc107;}
+  #uppest p{color: #000000;}
+  #uppest ul li{list-style-type: none;}
 @media only screen and (max-width: 1000px){
+    #uppest{text-align: center;background-color: #ffffffbd;padding: 20px;}
     #services{
         flex-direction: column;flex-wrap: nowrap;
     }
@@ -236,10 +253,10 @@ footer p{
         width: 100%; 
     }
     #services1{
-        flex-direction: column;flex-wrap: nowrap;
+        flex-direction: row;flex-wrap: wrap;
     }
     #services1>a{
-        width: 100%; 
+        width: 35%; 
     }
     #talk,#talk2{
         flex-direction: column;justify-content: center;
@@ -315,7 +332,7 @@ footer p{
       }
 
 .container{
-    float: right;margin-right: 30px;margin-top: -10px;
+    float: right;margin-right: 30px;margin-top: -30px;
 }
 
 }

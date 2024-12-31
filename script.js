@@ -158,3 +158,5 @@ function toggleFAQ(id) {
       behavior: "smooth"
     });
   }
+
+  
